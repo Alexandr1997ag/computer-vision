@@ -33,7 +33,7 @@ cdf_g = cdf_g.astype(np.uint8)# Transform from float64 back to unit8
 cdf_b = (cdf_b-cdf_b[0])*255/(cdf_b[-1]-1)
 cdf_b = cdf_b.astype(np.uint8)# Transform from float64 back to unit8
 
-# get pixel by cdf table
+# get pixel by cdf table (у нас есть вход и выход, применяем трансформацию к начальному изображению по каждому каналу)
 r2 = cdf_r[r]
 g2 = cdf_g[g]
 b2 = cdf_b[b]
