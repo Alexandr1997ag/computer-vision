@@ -23,4 +23,9 @@ numpy - 03.359753
 opencv - 03.351171
 
 
+Источники - https://russianblogs.com/article/17011016846/
+https://numba.pydata.org/numba-examples/examples/density_estimation/histogram/results.html
+https://numba.pydata.org/numba-doc/latest/index.html  
+https://docs.opencv.org/4.x/
+
 
