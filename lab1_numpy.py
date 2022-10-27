@@ -18,7 +18,7 @@ hist_r, bins_r = np.histogram(r, 256)
 hist_g, bins_g = np.histogram(g, 256)
 hist_b, bins_b = np.histogram(b, 256)
 
-# calculate cdf
+# calculate cdf  (получение кумулятивную функцию распределения)
 cdf_r = hist_r.cumsum()
 cdf_g = hist_g.cumsum()
 cdf_b = hist_b.cumsum()
