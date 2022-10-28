@@ -23,6 +23,24 @@ numba - 05.420805
 numpy - 03.359753
 opencv - 03.351171
 
+результат работы numba
+![numba_2](https://user-images.githubusercontent.com/87136289/198679262-c9f7f5f1-e0ea-4292-a341-8c8042f1342d.png)
+![numba_1](https://user-images.githubusercontent.com/87136289/198679229-3a7e1f0a-1d55-485b-9caa-09ee4e2a1f05.png)
+
+результат работы numpy
+
+![numpy_1](https://user-images.githubusercontent.com/87136289/198679437-64f63833-2e5b-4327-b308-ed400bcb1396.png)
+![numpy_2](https://user-images.githubusercontent.com/87136289/198679583-ae0472bd-38e3-4b21-a5fd-43735b508eb2.png)
+
+
+результат работы opencv
+
+
+![open_cv1](https://user-images.githubusercontent.com/87136289/198680061-0ecbce58-576b-4d28-af44-b43ec8106aea.png)
+![open_cv2](https://user-images.githubusercontent.com/87136289/198680064-65591182-4676-4cb1-87d9-fd31d5ed9a3b.png)
+
+
+
 
 Источники - https://russianblogs.com/article/17011016846/
 https://numba.pydata.org/numba-examples/examples/density_estimation/histogram/results.html
