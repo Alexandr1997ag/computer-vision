@@ -1,16 +1,457 @@
+Были исслеованы предобученные архитектуры сверточных сетей. 
+Процесс классификации происходит следующим образом:
+
+Изначально мы загружаем преобученную модель сети (т е ее веса). 
+Достаем из файла классы, на которых сеть была предобучена. В нашем случае все сети имели дело с ImageNet.
+Затем загружаем картинку, на которой хотим узнать, что находится.
+Делаем препроцессинг картинки.
+Загружаем в модель сети картинку.
+Получаем ответ. 
+Исследования проводились на локальной машине с GPU (CUDA).
+
+
 
 AlexNet:
-Labrador retriever 42.46735763549805
-0:00:00.761618
+1.jpeg
+tiger, Panthera tigris 61.96540451049805
+0:00:00.824504
+2.jpeg
+giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca 99.7594985961914
+0:00:00.847129
+3.jpeg
+indri, indris, Indri indri, Indri brevicaudatus 47.1043701171875
+0:00:00.873184
+4.jpeg
+German shepherd, German shepherd dog, German police dog, alsatian 98.39813232421875
+0:00:00.904258
+5.jpeg
+zebra 99.99464416503906
+0:00:00.932475
+6.jpeg
+tiger, Panthera tigris 85.28870391845703
+0:00:00.953857
+7.jpeg
+Siberian husky 17.45954704284668
+0:00:00.985304
+8.jpeg
+airliner 90.79456329345703
+0:00:01.018197
+9.jpeg
+airliner 69.5629653930664
+0:00:01.044285
+10.jpeg
+airliner 71.43842315673828
+0:00:01.072956
+12.jpeg
+lakeside, lakeshore 13.31157112121582
+0:00:01.102631
+13.jpeg
+maze, labyrinth 65.06319427490234
+0:00:01.132038
+14.jpeg
+cicada, cicala 69.38894653320312
+0:00:01.155068
+15.jpeg
+fly 94.01590728759766
+0:00:01.182554
+16.jpeg
+fly 99.26339721679688
+0:00:01.211458
+17.jpeg
+dung beetle 99.5541763305664
+0:00:01.234954
+18.jpeg
+dung beetle 94.11672973632812
+0:00:01.266974
+19.jpeg
+weevil 99.82000732421875
+0:00:01.295001
+20.jpeg
+African chameleon, Chamaeleo chamaeleon 44.99307632446289
+0:00:01.324499
+21.jpeg
+mink 94.7585220336914
+0:00:01.358227
+22.jpeg
+weasel 57.99342346191406
+0:00:01.385627
+23.jpeg
+mink 85.4457778930664
+0:00:01.414647
+24.jpeg
+gibbon, Hylobates lar 99.87065887451172
+0:00:01.438202
+25.jpeg
+gibbon, Hylobates lar 93.76109313964844
+0:00:01.464995
+26.jpeg
+gibbon, Hylobates lar 99.91584777832031
+0:00:01.495378
+27.jpeg
+baboon 93.97994995117188
+0:00:01.521165
+28.jpeg
+baboon 99.0781021118164
+0:00:01.548345
+29.jpeg
+chiffonier, commode 94.21610260009766
+0:00:01.580581
+30.jpeg
+upright, upright piano 33.934967041015625
+0:00:01.599602
+31.jpeg
+file, file cabinet, filing cabinet 48.25426483154297
+0:00:01.624339
+32.jpeg
+cloak 55.94215393066406
+0:00:01.652188
+33.jpeg
+breastplate, aegis, egis 38.26875686645508
+0:00:01.675022
+34.jpeg
+breastplate, aegis, egis 36.13182830810547
+0:00:01.703206
+35.jpeg
+hourglass 79.91738891601562
+0:00:01.731432
+36.jpeg
+hourglass 98.756103515625
+0:00:01.759478
+37.jpeg
+monastery 62.273597717285156
+0:00:01.783037
+39.jpeg
+monastery 59.32189178466797
+0:00:01.809733
+40.jpeg
+panpipe, pandean pipe, syrinx 99.9497299194336
+0:00:01.838514
+41.jpeg
+panpipe, pandean pipe, syrinx 99.94338989257812
+0:00:01.866438
+42.jpeg
+studio couch, day bed 28.317474365234375
+0:00:01.896622
+43.jpeg
+cleaver, meat cleaver, chopper 19.61920738220215
+0:00:01.924685
+44.jpeg
+paper towel 18.975187301635742
+0:00:01.952310
+45.jpeg
+plunger, plumber's helper 64.2064208984375
+0:00:01.976608
+46.jpeg
+maraca 33.493499755859375
+0:00:02.002567
+47.jpeg
+neck brace 13.9729585647583
+0:00:02.030118
+48.jpeg
+puck, hockey puck 17.294763565063477
+0:00:02.060061
+49.jpeg
+miniskirt, mini 19.32347297668457
+0:00:02.082357
+50.jpeg
+mailbag, postbag 78.1541519165039
+0:00:02.108784
+
 
 
 ResNet:
-Labrador retriever 48.86917495727539
-0:00:01.016332
+1.jpeg
+tabby, tabby cat 84.55516815185547
+0:00:01.006411
+2.jpeg
+giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca 99.9332504272461
+0:00:01.167863
+3.jpeg
+polecat, fitch, foulmart, foumart, Mustela putorius 33.337982177734375
+0:00:01.311863
+4.jpeg
+German shepherd, German shepherd dog, German police dog, alsatian 93.68621063232422
+0:00:01.456478
+5.jpeg
+zebra 99.3794174194336
+0:00:01.601886
+6.jpeg
+tiger, Panthera tigris 96.89784240722656
+0:00:01.745384
+7.jpeg
+Egyptian cat 59.392704010009766
+0:00:01.890448
+8.jpeg
+airliner 99.1134262084961
+0:00:02.037924
+9.jpeg
+airliner 99.02819061279297
+0:00:02.189527
+10.jpeg
+airliner 87.557861328125
+0:00:02.341129
+12.jpeg
+lakeside, lakeshore 53.587310791015625
+0:00:02.498176
+13.jpeg
+maze, labyrinth 45.38400650024414
+0:00:02.664838
+14.jpeg
+cicada, cicala 99.5493392944336
+0:00:02.840093
+15.jpeg
+fly 99.88583374023438
+0:00:02.984222
+16.jpeg
+fly 99.99264526367188
+0:00:03.138025
+17.jpeg
+dung beetle 99.39945220947266
+0:00:03.284942
+18.jpeg
+dung beetle 99.8714599609375
+0:00:03.433127
+19.jpeg
+weevil 99.66990661621094
+0:00:03.582771
+20.jpeg
+weevil 94.54437255859375
+0:00:03.730455
+21.jpeg
+mink 90.32650756835938
+0:00:03.885403
+22.jpeg
+polecat, fitch, foulmart, foumart, Mustela putorius 52.71523666381836
+0:00:04.037604
+23.jpeg
+mink 94.85033416748047
+0:00:04.184908
+24.jpeg
+gibbon, Hylobates lar 99.78177642822266
+0:00:04.336817
+25.jpeg
+gibbon, Hylobates lar 99.46192169189453
+0:00:04.487850
+26.jpeg
+gibbon, Hylobates lar 98.35082244873047
+0:00:04.637510
+27.jpeg
+baboon 87.65850067138672
+0:00:04.784735
+28.jpeg
+baboon 84.98348236083984
+0:00:04.937192
+29.jpeg
+chiffonier, commode 63.519798278808594
+0:00:05.091194
+30.jpeg
+chiffonier, commode 82.0262222290039
+0:00:05.242358
+31.jpeg
+chiffonier, commode 51.01380157470703
+0:00:05.398812
+32.jpeg
+cloak 98.5597915649414
+0:00:05.571594
+33.jpeg
+cuirass 66.78548431396484
+0:00:05.713313
+34.jpeg
+cuirass 60.252864837646484
+0:00:05.856519
+35.jpeg
+hourglass 99.59954833984375
+0:00:06.001927
+36.jpeg
+hourglass 99.97125244140625
+0:00:06.143826
+37.jpeg
+monastery 93.09688568115234
+0:00:06.287485
+39.jpeg
+monastery 83.39826202392578
+0:00:06.430724
+40.jpeg
+panpipe, pandean pipe, syrinx 99.99991607666016
+0:00:06.577004
+41.jpeg
+panpipe, pandean pipe, syrinx 99.99344635009766
+0:00:06.724446
+42.jpeg
+studio couch, day bed 39.40984344482422
+0:00:06.941492
+43.jpeg
+sunscreen, sunblock, sun blocker 12.482930183410645
+0:00:07.104818
+44.jpeg
+studio couch, day bed 49.36214828491211
+0:00:07.246763
+45.jpeg
+plunger, plumber's helper 99.83646392822266
+0:00:07.391364
+46.jpeg
+plunger, plumber's helper 99.96607208251953
+0:00:07.535487
+47.jpeg
+puck, hockey puck 85.18389129638672
+0:00:07.680238
+48.jpeg
+puck, hockey puck 99.9722671508789
+0:00:07.825950
+49.jpeg
+Loafer 48.64938735961914
+0:00:07.969199
+50.jpeg
+mailbag, postbag 90.15540313720703
+0:00:08.114775
+
 
 
 VGG19:
-Labrador retriever 78.95138549804688
-0:00:01.226033
+1.jpeg
+tabby, tabby cat 57.641326904296875
+0:00:01.483986
+2.jpeg
+giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca 99.94760131835938
+0:00:01.578222
+3.jpeg
+polecat, fitch, foulmart, foumart, Mustela putorius 36.514503479003906
+0:00:01.672535
+4.jpeg
+German shepherd, German shepherd dog, German police dog, alsatian 88.30559539794922
+0:00:01.766474
+5.jpeg
+zebra 99.98475646972656
+0:00:01.858196
+6.jpeg
+tiger, Panthera tigris 90.10693359375
+0:00:02.005558
+7.jpeg
+Egyptian cat 11.477291107177734
+0:00:02.185588
+8.jpeg
+airliner 97.63994598388672
+0:00:02.308648
+9.jpeg
+airliner 92.24925231933594
+0:00:02.406321
+10.jpeg
+airliner 69.42930603027344
+0:00:02.494244
+12.jpeg
+lakeside, lakeshore 21.10506820678711
+0:00:02.587495
+13.jpeg
+maze, labyrinth 46.205055236816406
+0:00:02.680356
+14.jpeg
+cicada, cicala 99.7933120727539
+0:00:02.768714
+15.jpeg
+fly 99.98925018310547
+0:00:02.866786
+16.jpeg
+fly 99.99754333496094
+0:00:02.953123
+17.jpeg
+dung beetle 99.93020629882812
+0:00:03.045395
+18.jpeg
+dung beetle 99.81940460205078
+0:00:03.140503
+19.jpeg
+weevil 94.71785736083984
+0:00:03.236528
+20.jpeg
+ringlet, ringlet butterfly 17.002214431762695
+0:00:03.325958
+21.jpeg
+mink 83.78191375732422
+0:00:03.416949
+22.jpeg
+polecat, fitch, foulmart, foumart, Mustela putorius 39.73577117919922
+0:00:03.505303
+23.jpeg
+mink 88.3604965209961
+0:00:03.596336
+24.jpeg
+gibbon, Hylobates lar 98.71577453613281
+0:00:03.689136
+25.jpeg
+gibbon, Hylobates lar 99.8129653930664
+0:00:03.783898
+26.jpeg
+gibbon, Hylobates lar 99.33258056640625
+0:00:03.874989
+27.jpeg
+baboon 96.9225845336914
+0:00:03.964885
+28.jpeg
+baboon 99.15823364257812
+0:00:04.082189
+29.jpeg
+chiffonier, commode 93.42579650878906
+0:00:04.197173
+30.jpeg
+upright, upright piano 71.41602325439453
+0:00:04.287782
+31.jpeg
+chiffonier, commode 69.88783264160156
+0:00:04.376933
+32.jpeg
+cloak 45.951210021972656
+0:00:04.463865
+33.jpeg
+cuirass 55.520294189453125
+0:00:04.553993
+34.jpeg
+breastplate, aegis, egis 59.929264068603516
+0:00:04.656056
+35.jpeg
+hourglass 99.99593353271484
+0:00:04.765513
+36.jpeg
+hourglass 99.9959945678711
+0:00:04.871248
+37.jpeg
+monastery 91.84199523925781
+0:00:04.962692
+39.jpeg
+monastery 42.20580291748047
+0:00:05.054860
+40.jpeg
+panpipe, pandean pipe, syrinx 99.99998474121094
+0:00:05.148561
+41.jpeg
+panpipe, pandean pipe, syrinx 99.8448257446289
+0:00:05.242553
+42.jpeg
+sleeping bag 38.598995208740234
+0:00:05.343421
+43.jpeg
+cleaver, meat cleaver, chopper 46.97788619995117
+0:00:05.442395
+44.jpeg
+cleaver, meat cleaver, chopper 16.82389259338379
+0:00:05.529077
+45.jpeg
+plunger, plumber's helper 66.11898803710938
+0:00:05.619936
+46.jpeg
+plunger, plumber's helper 90.9634017944336
+0:00:05.704339
+47.jpeg
+puck, hockey puck 34.433807373046875
+0:00:05.793910
+48.jpeg
+puck, hockey puck 54.79302215576172
+0:00:05.886324
+49.jpeg
+Mexican hairless 22.689191818237305
+0:00:05.978641
+50.jpeg
+combination lock 33.150856018066406
+0:00:06.069451
+
 
 
